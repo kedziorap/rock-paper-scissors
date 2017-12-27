@@ -1,0 +1,9 @@
+.container {
+    padding: 10px;
+}
+#result {
+    text-align: center;
+}
+#result strong {
+    color: red;
+}
