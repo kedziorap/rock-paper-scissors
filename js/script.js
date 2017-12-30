@@ -30,6 +30,10 @@ function setGameElements() {
         case 'ended':
             newGameBtn.innerText = 'Play again';
             resultPlace.style.display = 'block';
+            playerPickElem.innerHTML = 'Player selection';
+            computerPickElem.innerHTML = 'Computer selection';
+            playerResultElem.innerHTML = 'Player score';
+            computerResultElem.innerHTML ='Computer score';
         case 'notStarted':
         default:
             newGameElem.style.display = 'block';
@@ -57,7 +61,7 @@ function playerPick(playerPick) {
 
     playerPickElem.innerHTML = playerPick;
     computerPickElem.innerHTML = computerPick;
-    
+
     checkRoundWinner(playerPick, computerPick);
     setGamePoints();
     checkLimit(player.score, computer.score);
